@@ -131,6 +131,8 @@ class Note {
   // Convert a Note object into a Map object
   Map<String, dynamic> toMap() {
 
+    
+    //内部の値をマップにセットする
     var map = Map<String, dynamic>();
     if (id != null) {
       map['id'] = _id;
@@ -152,6 +154,7 @@ class Note {
 
     return map;
   }
+  //外から取り込んだ値を、内部にセットする
 
   // Extract a Note object from a Map object
   Note.fromMapObject(Map<String, dynamic> map) {
